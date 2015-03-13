@@ -1,0 +1,177 @@
+div.contact-icons i.fa  {
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  color: black;
+  // animation: contact-icon-move 5s ease-in-out infinite;
+  // animation-direction: alternate;
+  top: 60%;
+  &:hover {
+    color: rgba( 255, 0, 0, 0.7);
+    cursor: pointer;
+    // animation: none;
+  }
+}
+
+a .fa-facebook-official {
+  left: 15%;
+  animation: fb-move 10s ease-in-out infinite;
+  // animation-direction: alternate;
+}
+
+a .fa-linkedin-square {
+  left: 25%;
+  animation: li-move 10s ease-in-out infinite;
+}
+
+a .fa-instagram {
+  left: 35%;
+  animation: ig-move 10s ease-in-out infinite;
+}
+
+a .fa-github {
+  left: 45%;
+  animation: gh-move 10s ease-in-out infinite;
+}
+
+a .fa-spotify {
+  left: 55%;
+  animation: sp-move 10s ease-in-out infinite;
+}
+
+a .fa-twitter {
+  left: 65%;
+  animation: tw-move 10s ease-in-out infinite;
+}
+
+a .fa-vine {
+  left: 75%;
+  animation: vn-move 10s ease-in-out infinite;
+}
+
+a .fa-wechat {
+  left: 85%;
+  animation: wc-move 10s ease-in-out infinite;
+}
+
+@keyframes fb-move {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(-50px);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes li-move {
+    10% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-50px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes ig-move {
+    20% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-50px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes gh-move {
+    30% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes sp-move {
+    40% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes tw-move {
+    50% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-50px);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes vn-move {
+    60% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-50px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes wc-move {
+    70% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-50px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
