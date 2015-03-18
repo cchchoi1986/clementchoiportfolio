@@ -1,0 +1,20 @@
+.project-div {
+  // height: 650px;
+  width: 100%;
+  padding: 2% 0;
+  // background-image: url("../assets/images/Hikehk.png");
+  // opacity: 0.5;
+  &:hover {
+    background: #EEE;
+  }
+}
+
+.project-image {
+  display: inline-block;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+
+.project-info {
+
+}

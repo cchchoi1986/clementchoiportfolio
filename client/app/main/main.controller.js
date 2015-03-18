@@ -1,29 +1,29 @@
 'use strict';
 
 angular.module('clementchoiportfolioApp')
-  .controller('MainCtrl', ['$scope', '$stateParams', '$http', 'socket', function ($scope, $stateParams, $http, socket) {
+  .controller('MainCtrl', ['$scope', '$location', '$state', '$http', '$window', '$anchorScroll', 'socket', function ($scope, $location, $state, $http, $window, $anchorScroll, socket) {
     // $scope.awesomeThings = [];
 
-    console.log($stateParams);
+    $scope.placeMark = $state.current.url;
+    console.log($scope.placeMark);
 
-    // $http.get('/api/things').success(function(awesomeThings) {
-    //   $scope.awesomeThings = awesomeThings;
-    //   socket.syncUpdates('thing', $scope.awesomeThings);
-    // });
+    angular.element($window).bind("scroll", function() {
+      if (this.pageYOffset >= 10) {
+        // $location.path("/about")
+      }
+    });
 
-    // $scope.addThing = function() {
-    //   if($scope.newThing === '') {
-    //     return;
+    // $scope.gotoAnchor = function(x) {
+    //   var newHash = 'anchor' + x;
+    //   if ($location.hash() !== newHash) {
+    //     // set the $location.hash to `newHash` and
+    //     // $anchorScroll will automatically scroll to it
+    //     $location.hash('anchor' + x);
+    //   } else {
+    //     // call $anchorScroll() explicitly,
+    //     // since $location.hash hasn't changed
+    //     $anchorScroll();
     //   }
-    //   $http.post('/api/things', { name: $scope.newThing });
-    //   $scope.newThing = '';
     // };
 
-    // $scope.deleteThing = function(thing) {
-    //   $http.delete('/api/things/' + thing._id);
-    // };
-
-    // $scope.$on('$destroy', function () {
-    //   socket.unsyncUpdates('thing');
-    // });
   }]);

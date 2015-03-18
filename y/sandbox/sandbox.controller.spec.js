@@ -1,16 +1,16 @@
 'use strict';
 
-describe('Controller: BlogCtrl', function () {
+describe('Controller: SandboxCtrl', function () {
 
   // load the controller's module
   beforeEach(module('clementchoiportfolioApp'));
 
-  var BlogCtrl, scope;
+  var SandboxCtrl, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    BlogCtrl = $controller('BlogCtrl', {
+    SandboxCtrl = $controller('SandboxCtrl', {
       $scope: scope
     });
   }));

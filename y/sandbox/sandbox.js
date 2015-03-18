@@ -3,9 +3,9 @@
 angular.module('clementchoiportfolioApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('blog', {
-        url: '/blog',
-        templateUrl: 'app/blog/blog.html',
-        controller: 'BlogCtrl'
+      .state('sandbox', {
+        url: 'y',
+        templateUrl: '../y/sandbox/sandbox.html',
+        controller: 'SandboxCtrl'
       });
   });

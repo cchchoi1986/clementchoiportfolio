@@ -1,11 +1,18 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="body">
-  <div ng-repeat="project in projects">
-    <h1>{{ project.name }}</h1>
-    <h4>{{ project.collaborators }}</h4>
-    <h6>{{ project.description }}</h6>
-    <img src="">
-    <a href>{{ project.url }}</a>
+
+  <!-- <h1 class="page-title">Past Projects</h1> -->
+  <div class="project-div row" ng-repeat="project in projects">
+    <a href="{{ project.url }}">
+      <img class="project-image col-xs-8" src="assets/images/{{ project.image }}">
+    </a>
+    <div class="project-info col-xs-4">
+      <h1>{{ project.name }}</h1>
+      <h5>By {{ project.collaborators }}</h5>
+      <h6>{{ project.description }}</h6>
+      <a href="{{ project.url }}"><h5>See website</h5></a>
+    </div>
   </div>
+
 </div>
